@@ -8,6 +8,7 @@ RUN apk --no-cache add git \
     && git clone https://github.com/louislam/uptime-kuma.git .
 
 # Install dependencies and build
+RUN npm install -g npm@latest
 RUN npm install --production \
     && npm run build
 
