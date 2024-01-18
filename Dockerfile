@@ -1,4 +1,4 @@
-# Stage 1: Build the application
+# Use the official Node.js image as the base image
 FROM node:14-alpine as builder
 
 WORKDIR /app
