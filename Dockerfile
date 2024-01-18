@@ -9,7 +9,6 @@ RUN apk --no-cache add git \
 
 # Install dependencies and build
 RUN npm install -g npm@latest
-RUN node -v && npm -v
 RUN npm install --production
 RUN npm run build
 RUN npm install -g npm@latest
